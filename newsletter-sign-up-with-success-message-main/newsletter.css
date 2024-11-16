@@ -1,0 +1,148 @@
+@font-face {
+    font-family: myFont;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(Roboto-Bold.ttf);
+}
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: myFont;
+}
+
+h1 {
+    font-family: myFont2;
+    font-size: 40px;
+}
+
+.holder {
+    height: 500px;
+    width: 650px;
+    background-color: white;
+    border-radius: 17px;
+    margin-top: 5%;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.texthold {
+    margin-top: 50px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+.imgholder {
+    height: 470px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.small {
+    display: none;
+}
+
+.big {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.second {
+    font-size: 14px;
+}
+
+.writing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tick {
+    margin-right: 20px;
+}
+
+#email {
+    border: thin solid grey;
+    width: 275px;
+    height: 40px;
+    border-radius: 7px;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.theultemail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#send {
+    border: thin solid grey;
+    width: 300px;
+    height: 50px;
+    border-radius: 9px;
+    padding: unset;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    cursor: pointer;
+}
+
+#send:active {
+    background-color: hsl(4, 100%, 67%);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: white;
+    }
+
+    .holder {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 0 0 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .big {
+        display: none;
+    }
+
+    .small {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+}
