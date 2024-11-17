@@ -1,0 +1,147 @@
+@font-face {
+    font-family: myfont;
+    src: url(Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: myfontbold;
+    src: url(Roboto-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder {
+    width: 80%;
+    height: 90%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+}
+
+.yes {
+    width: 20%;
+    min-width: 50px;
+}
+
+.first {
+    word-wrap: break-word;
+    color: hsl(234, 29%, 20%);
+    font-size: 27px;
+    font-weight: 900;
+    font-family: myfontbold;
+}
+
+.second{
+    word-wrap: break-word;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: myfontbold;    
+}
+
+spam {
+    color: hsl(234, 29%, 20%);
+}
+
+.footer {
+    height: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.end {
+    height: 100%;
+    width: 100%;
+}
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;    
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    background-color: hsl(234, 29%, 20%);
+}
+
+@media (min-width: 760px) {
+    body {
+        background-color: hsl(234, 29%, 20%);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .holder {
+        background-color: white;
+        width: 20%;
+        height: 45%;
+        border-radius: 20px;
+        padding: 20px;        
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header {
+        margin-top: 0px;
+        height: 70%;
+        width: 100%;
+    }
+
+    .second {
+        font-weight: 100;
+        font-size: 12px;
+        font-family: myfont;
+    }
+
+    .footer {
+        height: 12%;
+        width: 100%;
+    }
+
+    .back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;    
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        background-color: hsl(234, 29%, 20%);
+        font-family: myfont;
+        font-size: 12px;
+    }
+}
